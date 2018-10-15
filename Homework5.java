@@ -3,7 +3,16 @@ public class Homework5 {
 	/* Finish the constructor and create any necessary instance
 	 * variables
 	 */
+	 private String sample;
+	 static int uno;
+	 static int dos;
+
 	public Homework5(String s, int a, int b) {
+		sample = s;
+		uno = a;
+		dos = b;
+
+
 
 	}
 
@@ -16,6 +25,8 @@ public class Homework5 {
 	 * substring method in the String class
 	 */
 	public String substring(int index, int length) {
+		String woah = sample.substring(index + 1, length + 2);
+		return woah;
 
 	}
 
@@ -25,14 +36,27 @@ public class Homework5 {
 	 * an example
 	 */
 	public boolean contains(String s) {
-		
+		int op = sample.indexOf(s);
+		if (op > 0){
+			return true;
+		}
+		else {
+			return false;
+		}
+
+
 	}
 
 	/* Return the larger of the two stored numbers
 	 */
 	public static int max() {
-
-	}
+		if (uno > dos){
+			return uno;
+		}
+		else {
+			return dos;
+		}
+		}
 
 	public static void main(String[] args) {
 		int exitCode = 0;
