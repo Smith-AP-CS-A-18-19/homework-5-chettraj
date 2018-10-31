@@ -25,6 +25,7 @@ public class Homework5 {
 	 * substring method in the String class
 	 */
 	public String substring(int index, int length) {
+		// Almost. Start at index, and go to index + length
 		String woah = sample.substring(index + 1, length + 2);
 		return woah;
 
